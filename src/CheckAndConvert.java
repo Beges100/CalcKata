@@ -47,6 +47,6 @@ public class CheckAndConvert {
         if (result > 0)
             return romanian[result];
         else
-            return"Данные введены неверно";
+            throw new IllegalArgumentException("Вы ввели неверное числовое значение");
     }
 }
